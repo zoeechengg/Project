@@ -1,13 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="keyword" content="Hong Kong, Food, Restaurants, Recommendations, Asian Cuisines, Japanese, Sushi, Sashimi, Vietnamese, pho, 
+    Indian, Tonkatsu, Yakiniku, Izakaya">
+
+    <meta name="description" content="Apart from the local Hong Kong snacks and meals, there is a plethora of Asian cuisines in the city to 
+    explore. Japanese restaurants are a popular choice, but Hong Kong has a good variety of other cuisines such as Vietnamese pho, Indian food,
+    and a good mix of Asian fusion restaurants as well.">
+
     <title>Asian Cuisine</title>
+
+    <link rel="stylesheet" href="project.css" type="text/css">
+
+    <script type="text/javascript">
+        function change(imageID) {
+            let patty = document.getElementById("patty");
+
+            if (imageID == "patty") {
+                patty.src = "images/TheGreat6.jpeg";
+            }
+        }
+
+        function changeBack(imageID) {
+            let patty = document.getElementById("patty");
+
+            if (imageID == "patty") {
+                patty.src = "images/TheGreat1.jpg";
+            }
+        }
+    </script>
+
+    <style type="text/css">
+        div#asianback {
+            background-image: url("images/Asianbanner.png");
+            opacity: 0.8;
+            height: 170px;
+        }
+    </style>
+
 </head>
+
 <body>
-    <header><a href="Index.html">Hong Kong Foodies</a></header>
+    <div class="head">
+        <header><a href="index.htm">Hong Kong Foodies</a></header>
+    </div>
 
     <nav>
         <ul>
@@ -20,135 +61,250 @@
         </ul>
     </nav>
 
-    <main> 
-    <div>
-        <h2>Asian Cuisine</h2>
-    </div>
+    <main>
+        <div id="asianback">
+            <h2>Asian Cuisine</h2>
+        </div>
 
-    <div>
-        <p> Asian cuisine includes several major regions, where many cultures have their own unique characteristic cuisine. Of the many different
-            cuisines that come from the continent, a few of the main cuisines are - <a href="#Japanese">Japanese</a>,
-            <a href="#Indian">Indian</a> and <a href="#Vietnamese">Vietnamese</a>.
-        </p>
-    </div>
+        <div class="description">
+            <p> Asian cuisine includes several major regions, where many cultures have their own unique characteristic
+                cuisine. Of the many different
+                cuisines that come from the continent, a few of the main cuisines are - <a
+                    href="#Japanese">Japanese</a>,
+                <a href="#Indian">Indian</a> and <a href="#Vietnamese">Vietnamese</a>. There are also many restaurants
+                that offer <a href="#Fusion">
+                    Asian fusion</a> as well, which is quite popular.
+        </div>
 
-    <div>
-        <a id="Japanese"></a>
-        <h3>Japanese</h3>
+        <div>
+            <a id="Japanese"></a>
+            <h3>Japanese</h3>
+            <hr>
+            <h4>Yakiniku Great</h4>
+            <p class="centerimg">
+                <!-- Javascript - Changing the image with mousein mouseout -->
+                <img onmouseover="change(this.id)" onmouseout="changeBack(this.id)" id="patty"
+                    src="images/TheGreat1.JPG" title="Mini Beef Patty" alt="A picture of a mini sized beef patty"
+                    height="300">
+                <img src="images/TheGreat2.JPG" title="Raw Beef Sushi" alt="A picture of a raw beef sushi" height="300">
+                <img src="images/TheGreat3.JPG" title="Raw Beef" alt="A picture of a plate of beef before cooking"
+                    height="300">
+                <img src="images/TheGreat5.JPG" title="Sliced beef in Egg foam" alt="A picture of their signature dish"
+                    height="300">
+                <video height="300" controls muted>
+                    <source src="images/TheGreat4.mp4" type="video/mp4">
+                </video>
+            </p>
+            <p class="mid">Location: 255 Queen's Road Central, Sheung Wan, Hong Kong</p>
+            <p class="mid">
+                "Yakiniku" stands for grilled meat in Japanese and this is exactly what this restaurant does best. With
+                grills in the center of each
+                table, Yakiniku Great's focus is on its meats. They offer different cuts of the cow, cooked at specific
+                times and paired with
+                different sauces for each cut. It is clear how much effort and thought is put into each slice of meat
+                served at Yakiniku Great,
+                and the servers can either cook them for you or you can do it yourself, which in my opinion is a lot
+                more fun! The wagyu is so soft
+                that it melts in your mouth the second you eat it.
+            </p>
+            <br>
+            <h4>Porker</h4>
+            <p class="centerimg">
+                <img src="images/Porker1.jpeg" title="Pork Cutlet" alt="A picture of pork cutlet dish" height="300">
+                <img src="images/Porker2.jpeg" title="Pork Cutlet Sandwich" alt="A picture of a pork cutlet sandwich"
+                    height="300">
+                <img src="images/Porker3.jpeg" title="Prawn Tempura" alt="A picture of prawn tempura" height="300">
+            </p>
+            <p class="mid">Location: B/F, 55 Wellington St, Central, Hong Kong
+                (Entrance on Pottinger St)</p>
+            <p class="mid">
+                One of my favorite Japanese dishes is "tonkatsu" which is a breaded, deep-fried/tempura pork cutlet.
+                Here at Porker,
+                their entire menu focuses on just that. They are a specialty Japanese cutlet restaurant, serving
+                different types of
+                meats and seafood made tonkatsu style.
+            </p>
+            <br>
+            <h4>Zuma</h4>
+            <p class="centerimg">
+                <img src="images/Zuma1.jpg" title="Cold Noodles"
+                    alt="A picture of Zuma's cold noodles from buffet section" height="300">
+                <img src="images/Zuma3.jpg" title="Salmon Tartare" alt="A picture of Zuma's salmon appetizer"
+                    height="300">
+                <img src="images/Zuma2.jpg" title="Zuma Noodles" alt="A picture of Zuma's cooked food platter"
+                    height="300">
+                <img src="images/Zuma4.jpg" title="Miso Cod" alt="A picture of Zuma's famous grilled miso cod"
+                    height="300">
+                <img src="images/Zuma5.jpg" title="Appetizers" alt="A picture of an array of small bites from buffet"
+                    height="300">
+                <img src="images/Zuma6.jpg" title="Dessert platter" alt="A picture of Zuma's dessert platter"
+                    height="300">
+            </p>
+            <p class="mid">Location: Landmark Level 5 & 6, 15 Queen's Road, Central, Hong Kong</p>
+            <p class="mid">
+                Located in the central business district of Hong Kong and at one of the most prestigious addresses in
+                Central, Zuma Hong Kong is an internationally well known contemporary Japanese Izakaya restaurant with
+                locations in New York,
+                Boston, Miami, London, Dubai, just to name a few.
+            </p>
+            <p class="mid">
+                With their very own garden terrace, private room and a lounge and bar, Zuma's relaxing atmopshere
+                elevates the dining experience. My recommendation is to go on the weekend when they have a brunch
+                special with a
+                sushi/sashimi and a hot foods buffet, free flow of champagne (additional charge), a choice of one entree
+                and their
+                famous dessert platter.
+            </p>
+            <br>
+            <h4>Kappo ro ann</h4>
+            <p class="centerimg">
+                <img src="images/RoAnn3.JPG" title="Mackerel sushi"
+                    alt="A picture of seared mackerel wrapped with microgreens" height="300">
+                <img src="images/RoAnn4.JPG" title="Salmon belly sushi"
+                    alt="A picture of salmon belly sushi with salmon roe" height="300">
+                <img src="images/RoAnn5.JPG" title="Seared sushi" alt="A picture of Seared sushi" height="300">
+                <img src="images/RoAnn1.JPG" title="Raw beef dish" alt="A picture of the waygu beef slices"
+                    height="300">
+                <img src="images/RoAnn2.JPG" title="Eel sushi" alt="A picture of ro ann's eel sushi" height="300">
+            </p>
+            <p class="mid">Location: Shop 2801, 28/F, Isquare, 63 Nathan Road, Tsim Sha Tsui, Hong Kong</p>
+            <p class="mid">
+                Focused on ingredients sourced from Kumamoto in Japan, Kappo ro ann offers fresh sushi and a new take on
+                classic Japanese style cooked dishes. They are well known for their large chicken wings and raw chicken
+                dish. In
+                addition, Ro ann's restaurant offers sushi bar seating where sushi chefs provide meal goers with an
+                unforgettable
+                experience with their omakase set. The restaurant is also situated on the 28/F of iSquare (in Tsim Sha
+                Tsui),
+                overlooking the Victoria harbor.
+            </p>
+            <br>
+            <h4>Tensho</h4>
+            <p class="centerimg">
+                <img src="images/Tensho1.JPG" title="" alt="" height="300">
+                <img src="images/Tensho2.JPG" title="" alt="" height="300">
+                <img src="images/Tensho3.JPG" title="" alt="" height="300">
+                <img src="images/Tensho4.JPG" title="" alt="" height="300">
+            </p>
+            <p class="mid">Location: 2/F Henry House, 42 Yun Ping Rd, Causeway Bay, Hong Kong</p>
+            <p class="mid">
+                For the price of Tensho, the quality of the food you get is unbeatable. Located in Causeway Bay, tucked
+                away in small building,
+                Tensho is another great Japanese restaurant offering anything between sushi and sashimi to izakaya
+                dishes as well. It is definitely
+                a solid restaurant to dine at when you want something easy and casual.
+            </p>
+        </div>
+
+        <br> <br>
+
+        <div>
+            <a id="Indian"></a>
+            <h3>Indian</h3>
+            <hr>
+            <h4>Bombay Dreams</h4>
+            <p class="centerimg">
+                <img src="images/Bombay1.jpg" title="Chicken dish" alt="A picture of chicken dish" height="200">
+                <img src="images/Bombay2.jpg" title="Rice" alt="A picture of basmati rice" height="200">
+                <img src="images/Bombay3.jpg" title="Lunch buffet" alt="A picture of Bombay Dream's lunch buffet" height="200">
+                <img src="images/Bombay4.jpg" title="Grilled prawn" alt="A picture of grilled prawns" height="200">
+                <br><span class="caption">Source: <a href="https://hk.asiatatler.com/restaurants/bombay-dreams">
+                    https://hk.asiatatler.com/restaurants/bombay-dreams</a></span>
+            </p>
+            <p class="mid">Location: 4/F, Carfield Building, 77 Wyndham Street, Hong Kong</p>
+            <p class="mid">
+                Located in the busy party district of Hong Kong, Bombay Dreams offers classic Indian dishes with a
+                contemporary twist to it. Their portions are large and meant for sharing with friends and families.
+                Created by Indian chefs,
+                you can definitely taste the authenticity in their foods, more specifically their fragrant desserts.
+                They also offer classic cocktails that incorporate Indian spices and serve, in my opinion, one of the
+                best garlic naan
+                I've had.
+            </p>
+        </div>
+
+        <br> <br>
+
+        <div>
+            <a id="Vietnamese"></a>
+            <h3>Vietnamese</h3>
+            <hr>
+            <h4>Brass Spoon</h4>
+            <p class="centerimg">
+                <img src="images/BrassSpoon1.png" title="Beef Pho" alt="A picture of Brass Spoon's pho" height="250">
+                <img src="images/BrassSpoon2.png" title="Eating Pho" alt="A picture of pho with brass spoon" height="250">
+                <br><span class="caption">Source: <a href="https://tinyurbankitchen.com/brass-spoon-hong-kong-pho/">
+                    https://tinyurbankitchen.com/brass-spoon-hong-kong-pho/</a></span>
+            </p>
+            <p class="mid">
+                Location: G/F, 10 Pottinger Street, Central, Hong Kong <br>
+                Shop B, G/F, 1-3 Moon Street, Wan Chai, Hong Kong
+            </p>
+            <p class="mid">
+                One of the more popular Vietnamese Pho restaurants in Hong Kong is Brass Spoon, which has earned the
+                Michelin's Bib Gourmand status,
+                given to restaurants who have "exceptionally good food at moderate prices". Although compared to a lot
+                of the other chain Pho restaurants
+                in Hong Kong, Brass Spoon is considered a little on the pricer side, they pride themselves in offering
+                premium ingredients like "preimum raw beef".
+                One must fill in and tick a little sheet of paper to customize the ingredients and toppings added into
+                your pho. I love the fact that you are allowed
+                to add more or take away certain ingredients as you please when you order the noodles and their use of
+                quality ingredients.
+            </p>
+        </div>
+
+        <br><br>
+
+        <div>
+            <a id="Fusion"></a>
+            <h3>Asian Fusion</h3>
+            <hr>
+            <h4>Glasshouse</h4>
+            <p class="centerimg">
+                <img src="images/Glasshouse1.JPG" title="Pork belly bao" alt="A picture of pork belly bao" height="300">
+                <img src="images/Glasshouse2.JPG" title="Duck soup noodles" alt="A picture of shredded duck in soup noodles" height="300">
+                <img src="images/Glasshouse3.JPG" title="Deep fried dirty duck" alt="A picture of fried duck and rice" height="300">
+                <img src="images/Glasshouse4.JPG" title="Pink Rice Paper Roll" alt="A picture of pink rice paper rolls" height="300">
+                <img src="images/Glasshouse5.JPG" title="Fried chicken wings" alt="A picture of fried chicken wings" height="300">
+            </p>
+            <p class="mid">Location: Shop 4009, 1 Harbour View Street, Central, Hong Kong</p>
+            <p class="mid">
+                Compared to the rest of the rooftop restaurants and bars in the shopping mall of IFC, Glasshouse offers great prices for its 
+                Asian Fusion dishes. With amazing views of the harbor in the restaurant's literal glass house structure, Glasshouse is a perfect
+                spot for casual dinner with friends and family. Their menu boasts of a huge variety of dishes from mains to pastas, soup noodles, robata,
+                even rice dishes as well.
+            </p>
+            <p class="mid">
+                My personal favorite dish at Glasshouse is their duck noodle soup. Not only is the shredded duck meat juicy, but the noodle's broth
+                is extremely flavorful, making this a great dish for a cold winter day.
+            </p>
+        </div>
+
         <hr>
-        <h4>Yakiniku Great</h4>
-        <p>Location:255 Queen's Road Central, Sheung Wan, Hong Kong</p>
-        <p>
-            <img src="images/TheGreat1.JPG" title="Mini Beef Patty" alt="A picture of a mini sized beef patty" height="300">
-            <img src="images/TheGreat2.JPG" title="Raw Beef Sushi" alt="A picture of a raw beef sushi" height="300">
-            <img src="images/TheGreat3.JPG" title="Raw Beef" alt="A picture of a plate of beef before cooking" height="300">
-            <img src="images/TheGreat5.JPG" title="Sliced beef in Egg foam" alt="A picture of their signature dish" height="300">
-            <video height="300" controls muted>
-                <source src="images/TheGreat4.mp4" type="video/mp4">
-            </video>
-        </p>
-        <p>
-            "Yakiniku" stands for grilled meat in Japanese and this is exactly what this restaurant does best. With grills in the center of each
-            table, Yakiniku Great's focus is on its meats. They offer different cuts of the cow, cooked at specific times and paired with 
-            different sauces for each cut. It is clear how much effort and thought is put into each slice of meat served at Yakiniku Great,
-            and the servers can either cook them for you or you can do it yourself, which in my opinion is a lot more fun! The wagyu is so soft
-            that it melts in your mouth the second you eat it.
-        </p>
-        <br>
-        <h4>Porker</h4> 
-        <p>Location: B/F, 55 Wellington St, Central, Hong Kong
-        (Entrance on Pottinger St)</p>
-        <p>
-           <img src="images/Porker1.jpeg" title="Pork Cutlet" alt="A picture of pork cutlet dish" height="300">
-           <img src="images/Porker2.jpeg" title="Pork Cutlet Sandwich" alt="A picture of a pork cutlet sandwich" height="300">
-           <img src="images/Porker3.jpeg" title="Prawn Tempura" alt="A picture of prawn tempura" height="300">
-        </p>
-        <p>
-        One of my favorite Japanese dishes is "tonkatsu" which is a breaded, deep-fried/tempura pork cutlet. Here at Porker, 
-        their entire menu focuses on just that. They are a specialty Japanese cutlet restaurant, serving different types of 
-        meats and seafood made tonkatsu style.
-        </p>
-        <br>
-        <h4>Zuma</h4>
-        <p>
-            Location: Landmark Level 5 & 6, 15 Queen's Road, Central, Hong Kong
-        </p>
-        <p>
-            <img src="images/Zuma1.jpg" title="Zuma Dessert" alt="A picture of Zuma's dessert platter" height="250">
-            <img src="images/Zuma2.jpg" title="Zuma Brunch" alt="A picture of Zuma's brunch items" height="250">
-        </p>
-        <p>
-            Located in the central business district of Hong Kong and at one of the most prestigious addresses in Central,
-            Zuma Hong Kong is an internationally well known contemporary Japanese Izakaya restaurant with locations in New York, 
-            Boston, Miami, London, Dubai, just to name a few. <br>
-            With their very own garden terrace, private room and a lounge and bar, Zuma's relaxing atmopshere elevates the dining experience. 
-            My recommendation is to go on the weekend when they have a brunch special with a sushi/sashimi and hot foods buffet, free flow 
-            of champagne (additional charge), one entree and their famous dessert platter.
-        </p>
-    </div>
 
-    <br> <br> 
+        <footer>
+            <div class="sitemap">
+                About<br>
+                <a href="About.html">About Me</a><br>
+                <a href="Contact.html">Contact Me</a>
+                <br>
+                <br>
+                <br>
+                Restaurant Recommendations<br>
+                <a href="Local-Food.html">HK Local Street Food</a><br>
+                <a href="Asian-Cuisine.html">Asian Cuisines</a><br>
+                <a href="Western-Restaurants.html">Western Restaurants</a><br>
+                <a href="Latin-American.html">Latin American Food</a>
+            </div>
+            <hr>
+            © Copyright 2019 by Zoe Cheng. All rights reversed.
+            <br>
+            <a href="Sitemap.html">Sitemap</a>
+        </footer>
 
-    <div>
-        <a id="Indian"></a>
-        <h3>Indian</h3>
-        <hr>
-        <h4>Bombay Dreams</h4> 
-        <p>Location: 4/F, Carfield Building, 77 Wyndham Street, Hong Kong</p>
-        <p>
-            Images of bombay dreams
-        </p>
-        <p>
-            Located in the busy party district of Hong Kong, Bombay Dreams offers classic Indian dishes with a contemporary twist to it.
-            Their portions are large and meant for sharing with friends and families. They also offer classic cocktails that incorporate 
-            Indian spices and serve, in my opinion, one of the best garlic naan I've tried. 
-        </p>
-    </div>
+    </main>
 
-    <br> <br> 
-
-    <div>
-        <a id="Vietnamese"></a>
-        <h3>Vietnamese</h3>
-        <hr>
-        <h4>Brass Spoon</h4>
-        <p>
-            Location: G/F, 10 Pottinger Street, Central, Hong Kong <br> 
-            Shop B, G/F, 1-3 Moon Street, Wan Chai, Hong Kong
-        </p>
-        <p>
-            <img src="images/BrassSpoon1.png" title="Beef Pho" alt="A picture of Brass Spoon's pho" height="250">
-            <img src="images/BrassSpoon2.png" title="Eating Pho" alt="A picture of pho with brass spoon" height="250">
-        </p>
-        <p>
-            One of the more popular Vietnamese Pho restaurants in Hong Kong is Brass Spoon, which has earned the Michelin's Bib Gourmand status,
-            given to restaurants who have "exceptionally good food at moderate prices". Although compared to a lot of the other chain Pho restaurants 
-            in Hong Kong, Brass Spoon is considered a little on the pricer side, they pride themselves in offering premium ingredients like "preimum raw beef".
-            One must fill in and tick a little sheet of paper to customize the ingredients and toppings added into your pho. I love the fact that you are allowed 
-            to add more or take away certain ingredients as you please when you order the noodles and their use of quality ingredients.
-        </p>
-    </div>
-
-    <hr>
-
-    <footer>
-        About<br>
-        <a href="About.html">About Me</a><br>
-        <a href="Contact.html">Contact Me</a>
-        <br>
-        Restaurant Recommendations<br>
-        <a href="Local-Food.html">HK Local Street Food</a><br>
-        <a href="Asian-Cuisine.html">Asian Cuisines</a><br>
-        <a href="Western-Restaurants.html">Western Restaurants</a><br>
-        <a href="Latin-American.html">Latin American Food</a>
-        <br>
-        <hr>
-        © Copyright 2019 by Zoe Cheng. All rights reversed.
-        <br>
-        <a href="Sitemap.html">Sitemap</a>
-    </footer>
-   
-    </main> 
-    
 </body>
+
 </html>

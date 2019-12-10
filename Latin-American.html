@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="keyword" content="Hong Kong, Food, Restaurants, Recommendations, Latin American, Tacos">
+
+    <meta name="description" content="The most popular Latin-American inspiried food in Hong Kong is Mexican food. Hong Kong has a only 
+    a handful of Mexican restaurants but yet they serve amazing taco dishes with Asian inspiried twists.">
+
     <title>Latin American Food</title>
+
+    <link rel="stylesheet" href="project.css" type="text/css">
+
+    <style type="text/css">
+        div#latinback {
+            background-image: url("images/Latinbanner.png");
+            opacity: 0.8;
+            height: 170px;
+        }
+    </style>
+
 </head>
+
 <body>
-    <header><a href="Index.html">Hong Kong Foodies</a></header>
+    <div class="head">
+        <header><a href="index.htm">Hong Kong Foodies</a></header>
+    </div>
 
     <nav>
         <ul>
@@ -21,14 +42,16 @@
     </nav>
 
     <main>
-        <div>
+        <div id="latinback">
             <h2>Latin-American Food</h2>
         </div>
 
-        <div>
+        <div class="description">
             <p>
-                Latin American cuisine is the typical food common to the countries and cultures of Latin America. The spices used in the dishes 
-                are what make Latin American flavors so distinct. One of the more popular Latin American cuisines in Hong Kong is <a href="#Mexican">Mexican</a> 
+                Latin American cuisine is the typical food common to the countries and cultures of Latin America. The
+                spices used in the dishes
+                are what make Latin American flavors so distinct. One of the more popular Latin American cuisines in
+                Hong Kong is <a href="#Mexican">Mexican</a>
                 food, which more so hails from the Central American region.
             </p>
         </div>
@@ -38,35 +61,65 @@
             <h3>Mexican</h3>
             <hr>
             <h4>11 Westside</h4>
-            <p>Location: </p>
-            <p>
-                <img src="images/11Westside1.JPG" title="Tacos" alt="A picture of the restaurant's tacos" height="250">
-                <img src="images/11Westside2.JPG" title="Tacos 2" alt="A picture of the restaurant's tacos" height="250">
-                <img src="images/11Westside3.JPG" title="Churros with Ice Cream" alt="A picture of the churros" height="250">
-                <img src="images/11Westside4.JPG" title="Tres Leches" alt="A picture of tres leches" height="250">    
+            <p class="centerimg">
+                <img src="images/11Westside1.JPG" title="Tacos" alt="A picture of the restaurant's tacos" height="300">
+                <img src="images/11Westside2.JPG" title="Tacos 2" alt="A picture of the restaurant's tacos"
+                    height="300">
+                <img src="images/11Westside3.JPG" title="Churros with Ice Cream" alt="A picture of the churros"
+                    height="300">
+                <img src="images/11Westside4.JPG" title="Tres Leches" alt="A picture of tres leches" height="300">
             </p>
-            <p>
-                11 Westside is opened by L.A.'s very own Taco King, Esdras Ochoa, who started his career opening his taco truck in LA. After visitng Hong Kong
-                and receiving an offer from his new business partners, he opened up 11 Westside in Kennedy Town. The restaurant has seating indoors 
-                and outdoors, with a "speakeasy" at the back of the restaurant. Not only are the tacos there made from traditional ingredients, but 
-                Ochoa also learned to use some local ingredients to create specials like pork-belly taco. 
+            <p class="mid">Location: 1/F The Hudson, 11 Davis St, Kennedy Town, Hong Kong</p>
+            <p class="mid">
+                11 Westside is opened by L.A.'s very own Taco King, Esdras Ochoa, who started his career opening his
+                taco truck in LA. After visitng Hong Kong
+                and receiving an offer from his new business partners, he opened up 11 Westside in Kennedy Town. The
+                restaurant has seating indoors
+                and outdoors, with a "speakeasy" at the back of the restaurant. Not only are the tacos there made from
+                traditional ingredients, but
+                Ochoa also learned to use some local ingredients to create specials like pork-belly taco.
+            </p>
+            <h4>Brickhouse</h4>
+            <p class="centerimg">
+                <img src="images/Brickhouse1.JPG" title="Ceviche" alt="A picture of salmon ceviche and tortilla chips"
+                    height="300">
+                <img src="images/Brickhouse2.JPG" title="Taco Sharing Platter"
+                    alt="A picture of Brickhouse's signature taco sharing platter" height="300">
+            </p>
+            <p class="mid">Location: 20A D'Aguilar St, Central, Hong Kong</p>
+            <p class="mid">
+                Tucked into a narrow side street off of Lan Kwai Fong's main D'Aguilar Street, Brickhouse is a late
+                night Mexican bar
+                and restaurant. They offer a taco sharing platter where diners can choose 5 of Brickhouse's
+                signature tacos featured on the menu which is good for sharing. Brickhouse also offers late night
+                "brunch" on Saturday nights from 8-10:30pm, includes free flow and unlimited
+                servings of a range of dishes that Brickhouse does best. The restaurant has a very chill vibe, great for
+                catching up with
+                friends and good location for social gatherings. Although their food is packed with flavor, the
+                restaurant setting
+                might not be for everyone. It's dimly lit and cosy, definitely a hidden gem (the fact that it's
+                literally hidden
+                in a back alleyway).
             </p>
         </div>
 
-        
+
         <hr>
 
         <footer>
-            About<br>
-            <a href="About.html">About Me</a><br>
-            <a href="Contact.html">Contact Me</a>
-            <br>
-            Restaurant Recommendations<br>
-            <a href="Local-Food.html">HK Local Street Food</a><br>
-            <a href="Asian-Cuisine.html">Asian Cuisines</a><br>
-            <a href="Western-Restaurants.html">Western Restaurants</a><br>
-            <a href="Latin-American.html">Latin American Food</a>
-            <br>
+            <div class="sitemap">
+                About<br>
+                <a href="About.html">About Me</a><br>
+                <a href="Contact.html">Contact Me</a>
+                <br>
+                <br>
+                <br>
+                Restaurant Recommendations<br>
+                <a href="Local-Food.html">HK Local Street Food</a><br>
+                <a href="Asian-Cuisine.html">Asian Cuisines</a><br>
+                <a href="Western-Restaurants.html">Western Restaurants</a><br>
+                <a href="Latin-American.html">Latin American Food</a>
+            </div>
             <hr>
             © Copyright 2019 by Zoe Cheng. All rights reversed.
             <br>
@@ -74,7 +127,8 @@
         </footer>
     </main>
 
-    
-    
+
+
 </body>
+
 </html>

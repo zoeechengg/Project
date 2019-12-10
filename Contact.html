@@ -1,13 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="keyword" content="Hong Kong, Food, Restaurants, Recommendations, Street Food, Asian Cuisines, Western Restaurants, Japanese, 
+    Italian, Tapas, Mexican, Indian, Vietnamese, Dimsum, Local Food, Contact, Email">
+
+    <meta name="description" content="Reach out and contact us.">
+
     <title>Contact</title>
+
+    <link rel="stylesheet" href="project.css" type="text/css">
+
+    <style type="text/css">
+        #form1 {
+            margin-top: 20px;
+        }
+
+        #music {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            border: lightslategray solid 1px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            letter-spacing: 0.5px;
+        }
+    </style>
+
+    <script crossorigin="anonymous" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script type="text/javascript">
+        function validate() {
+            let myForm = document.getElementById("form1");
+            let name = myForm.fullname.value;
+            let email = myForm.email.value;
+            let message = myForm.message.value;
+
+            if (name == "" || email == "" || message == "") {
+                alert("Please enter valid information!");
+            }
+
+            return false;
+        }
+
+        $(function () {
+            $("button").click(function () {
+                $("h2").css("color", "beige");
+                $("h2").text("Thanks for submitting!");
+            })
+        })
+    </script>
+
+    <style type="text/css">
+        div#chatback {
+            background-image: url("images/Chatbanner.png");
+            opacity: 0.8;
+            height: 170px;
+        }
+
+        #white {
+            color: white;
+        }
+    </style>
+
 </head>
+
 <body>
-    <header>Hong Kong Foodies</header>
+    <div class="head">
+        <header><a href="index.htm">Hong Kong Foodies</a></header>
+    </div>
 
     <nav>
         <ul>
@@ -21,65 +95,84 @@
     </nav>
 
     <main>
-    
-    <div>
-    <h2>Lets Chat!</h2>
-    I want to know more about what you guys think.
-    <div>
-        Email Us at<br> <a href="mailto:zoe@hongkongfoodies.com">zoe@hongkongfoodies.com</a>
-    </div>
-    </div>  
 
-    <div>
-    <form method="post" action="mailto:zoe@hongkongfoodies.com">
-        <table>
+        <div id="chatback">
+            <h2 id="white">Lets Chat!</h2>
+        </div>
 
-        Got any good suggestions for restaurants? Shoot me a message!
-        <tr>
-            <td>
-                Name <br> <input type="text" name="full-name" size="35" maxlength="25" placeholder="First & Last Name">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Email Address <br> <input type="text" name="email" size="35" maxlength="20" placeholder="Email">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Message <br> <textarea name="message" rows="7" cols="35">What's your favorite restaurant? Let me know :)</textarea>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <button type="submit" name="submit" value="submit">Submit</button>
-            </td>
-        </tr>
-        
-        </table>
-    </form>
-    </div>
+        <div class="center">
+            <p>I want to know more about what you guys think. I love hearing from other people what kind of cuisines
+                they enjoy
+                eating. </p>
+        </div> <br>
 
-    <hr>
+        <p class="center">Email Us at<br> <a href="mailto:zoe@hongkongfoodies.com">zoe@hongkongfoodies.com</a></p>
 
-    <footer>
-        About<br>
-        <a href="About.html">About Me</a><br>
-        <a href="Contact.html">Contact Me</a>
-        <br>
-        Restaurant Recommendations<br>
-        <a href="Local-Food.html">HK Local Street Food</a><br>
-        <a href="Asian-Cuisine.html">Asian Cuisines</a><br>
-        <a href="Western-Restaurants.html">Western Restaurants</a><br>
-        <a href="Latin-American.html">Latin American Food</a>
-        <br>
+        <div class="center">
+            <form id="form1" method="post" action="mailto:zoe@hongkongfoodies.com">
+                <table>
+
+                    <p>Got any good suggestions for restaurants? Shoot me a message!</p>
+                    <tr>
+                        <td>
+                            Name <br> <input type="text" name="fullname" size="35" maxlength="25"
+                                placeholder="First & Last Name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Email Address <br> <input type="text" name="email" size="35" maxlength="20"
+                                placeholder="Email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Message <br> <textarea name="message" rows="7" cols="35"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!-- Javascript - Validating the form AND 
+                            jQuery - Changing the style and text after clicking the submit button-->
+                            <button onclick="return validate()" type="submit" name="submit"
+                                value="submit">Submit</button>
+                        </td>
+                    </tr>
+
+                </table>
+            </form>
+        </div>
+
+        <div id="music">
+            <iframe width="100%" height="200" scrolling="no" frameborder="no" allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/800939679&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+            </iframe>
+        </div>
+
         <hr>
-        © Copyright 2019 by Zoe Cheng. All rights reversed.
-        <br>
-        <a href="Sitemap.html">Sitemap</a>
-    </footer>
+
+        <footer>
+            <div class="sitemap">
+                About<br>
+                <a href="About.html">About Me</a><br>
+                <a href="Contact.html">Contact Me</a>
+                <br>
+                <br>
+                <br>
+                Restaurant Recommendations<br>
+                <a href="Local-Food.html">HK Local Street Food</a><br>
+                <a href="Asian-Cuisine.html">Asian Cuisines</a><br>
+                <a href="Western-Restaurants.html">Western Restaurants</a><br>
+                <a href="Latin-American.html">Latin American Food</a>
+            </div>
+            <hr>
+            © Copyright 2019 by Zoe Cheng. All rights reversed.
+            <br>
+            <a href="Sitemap.html">Sitemap</a>
+        </footer>
 
     </main>
-    
+
 </body>
+
 </html>
